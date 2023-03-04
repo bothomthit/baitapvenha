@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package HinhHoc;
-import java.util.Scanner;
+
 /**
  *
  * @author nhu quynh
@@ -50,9 +50,8 @@ public class hinhChuNhat extends HinhHoc {
         this.rong = rong;
     }
 
-    public hinhChuNhat(float dai, float rong) {
-        this.dai = dai;
-        this.rong = rong;
+    public hinhChuNhat() {
+       
     }
 
      public float chuVi;
@@ -100,6 +99,10 @@ public class hinhChuNhat extends HinhHoc {
     }
  public void nhapChieuDai(){
         System.out.println("Nhap chieu dai");
-        dai=scanner.nextFloat();
+       dai = sc.nextFloat();
     }
+ public void nhapChieuRong(){
+     System.out.println("Nhap chieu rong");
+     rong = sc.nextFloat();
+ }
 } 

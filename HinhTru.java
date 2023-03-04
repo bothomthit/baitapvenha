@@ -9,51 +9,35 @@ package HinhHoc;
  * @author nhu quynh
  */
 public class HinhTru extends HinhTron {
- 
-    public float chieuCao;
+    float chieuCao;
 
-    public HinhTru(float banKinh) {
-        super(banKinh);
+    public HinhTru() {
+        
     }
 
-    /**
-     * Get the value of chieuCao
-     *
-     * @return the value of chieuCao
-     */
-    public float getChieuCao() {
+   public float getChieuCao() {
         return chieuCao;
     }
 
-    /**
-     * Set the value of chieuCao
-     *
-     * @param chieuCao new value of chieuCao
-     */
     public void setChieuCao(float chieuCao) {
         this.chieuCao = chieuCao;
     }
    
     public float theTich;
 
-    /**
-     * Get the value of theTich
-     *
-     * @return the value of theTich
-     */
     @Override
     public float getTheTich() {
         return PI*banKinh*banKinh*chieuCao;
     }
 
-    /**
-     * Set the value of theTich
-     *
-     * @param theTich new value of theTich
-     */
     @Override
     public void setTheTich(float theTich) {
         this.theTich = theTich;
     }
-
+public void nhapchieuCao(){
+    System.out.println("nhap vao chieu cao");
+    chieuCao = sc.nextFloat();
 }
+    }
+    
+

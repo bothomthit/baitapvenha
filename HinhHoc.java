@@ -3,31 +3,27 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package HinhHoc;
-
+import java.util.Scanner;
 /**
  *
  * @author nhu quynh
  */
 public class HinhHoc {
-    
-    
-    
-    public HinhHoc(){
-        
+  public float PI = (float) 3.14 ;   
+   public float theTich;  
+   public float dienTich;
+    public String ten;
+    public float chuVi;
+    Scanner sc= new Scanner(System.in);
+ public HinhHoc() {
+           
     }
-    public HinhHoc(float theTich, float dienTich, float chuVi, String ten) {
-        this.theTich = theTich;
-        this.dienTich = dienTich;
-        this.chuVi = chuVi;
-        this.ten = ten;
-       
-    }
-    public float PI = (float) 3.14;
+    
 
     public float getPI() {
         return PI;
     }
-    public float theTich;
+   
 
     public float getTheTich() {
         return theTich;
@@ -37,7 +33,7 @@ public class HinhHoc {
         this.theTich = theTich;
     }
 
-    public float dienTich;
+    
 
     public float getDienTich() {
         return dienTich;
@@ -47,7 +43,7 @@ public class HinhHoc {
         this.dienTich = dienTich;
     }
 
-    public float chuVi;
+    
 
     public float getChuVi() {
         return chuVi;
@@ -57,7 +53,7 @@ public class HinhHoc {
         this.chuVi = chuVi;
     }
 
-    public String ten;
+   
 
     public String getTen() {
         return ten;
@@ -72,20 +68,31 @@ public class HinhHoc {
     }
 public void Xuatten(){
   
-    System.out.print(ten);
+    System.out.print("nhap ten");
+    ten = sc.next(ten);
+    System.out.println("ten da nhap la" +this.ten);
    
     
 }
 public void inChuVi(){
-     System.out.print(chuVi);
+     System.out.print("nhap chu vi");
+     chuVi = sc.nextFloat();
+     System.out.println("Chu vi la" + this.chuVi);
     
 }
 public void indienTich(){
-     System.out.print(dienTich);
+     System.out.println("nhap dien tich");
+    dienTich = sc.nextFloat();
+    System.out.print("dien tich la"+this.dienTich);
      
 }
 public void intheTich(){
-     System.out.print(theTich);
-     
-}
-}
+    System.out.println("nhap vao the tich"); 
+    theTich = sc.nextFloat();
+    System.out.print("the tich la" +this.theTich);
+}}
+      
+ 
+    
+   
+

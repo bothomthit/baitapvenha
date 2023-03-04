@@ -9,12 +9,16 @@ package HinhHoc;
  * @author nhu quynh
  */
 public class HinhVuong extends hinhChuNhat {
-    public HinhVuong(float canh) {
+public float canh;
+    public HinhVuong(float dai, float rong) {
+        super();
     }
-    public HinhVuong() {
-    }
+
+  
+    
 public void nhapCanh(){
-    System.out.print("canh");
+    System.out.print("nhap canh hinh vuong");
+    canh = sc.nextFloat();
 }
     
 }

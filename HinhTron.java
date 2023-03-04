@@ -21,7 +21,7 @@ public class HinhTron extends HinhHoc{
         this.banKinh = banKinh;
     }
 
-    public HinhTron(float banKinh) {
+    public HinhTron() {
         this.banKinh = banKinh;
     }
 
@@ -48,5 +48,8 @@ public class HinhTron extends HinhHoc{
     public void setDienTich(float dienTich) {
         this.dienTich = dienTich;
     }
-
+public void nhapBK(){
+    System.out.println("nhap ban kinh hinh tron:");
+            banKinh = sc.nextFloat();
+}
 }
